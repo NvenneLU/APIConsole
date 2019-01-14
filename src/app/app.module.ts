@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './@core/core.module';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 
-const config: SocketIoConfig = { url: 'http://nicolasvenne.info:3000', options: {} };
+const config: SocketIoConfig = { url: 'http://api2.laurentian.ca:3000', options: {} };
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';

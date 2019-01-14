@@ -48,7 +48,7 @@ export class KeysComponent {
 
   constructor(private service: ApiService) {
     const data = this.service.getKeys();
-    data.subscribe((data) => console.log(data));
+    data.subscribe((data: any) => this.source.load(data.keys));
   }
 
 

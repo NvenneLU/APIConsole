@@ -8,9 +8,18 @@ export class SocketService  {
   constructor(private socket: Socket) { }
 
   log = this.socket.fromEvent<string>('log');
+  logList = this.socket.fromEvent<string[]>('logList');
+  selectLog = this.socket.fromEvent<string>('selectedLog');
 
-  getLogs() {
-    this.socket.emit('getLogs');
-    console.log("test");
+  getLiveLog() {
+    this.socket.emit('getLiveLog');
+  }
+
+  getLogList() {
+    this.socket.emit('getLogList');
+  }
+
+  getLog(log: string) {
+    this.socket.emit('selectLog', log);
   }
 }
