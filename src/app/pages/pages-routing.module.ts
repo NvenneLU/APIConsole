@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { KeysComponent } from './keys/keys.component';
+import { LogsComponent } from './logs/logs.component';
+import { PermissionsComponent } from './permissions/permissions.component';
 
 const routes: Routes = [{
   path: '',
@@ -11,6 +14,18 @@ const routes: Routes = [{
     {
       path: 'dashboard',
       component: DashboardComponent,
+    },
+    {
+      path: 'keys',
+      component: KeysComponent,
+    },
+    {
+      path: 'logs',
+      component: LogsComponent,
+    },
+    {
+      path: 'permissions',
+      component: PermissionsComponent,
     },
     {
       path: '',

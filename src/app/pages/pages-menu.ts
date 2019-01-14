@@ -8,6 +8,21 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
+    title: 'API Keys',
+    icon: 'nb-danger',
+    link: '/pages/keys',
+  },
+  {
+    title: 'Server Logs',
+    icon: 'nb-compose',
+    link: '/pages/logs',
+  },
+  {
+    title: 'Permissions',
+    icon: 'nb-compose',
+    link: '/pages/permissions',
+  },
+  {
     title: 'FEATURES',
     group: true,
   },
