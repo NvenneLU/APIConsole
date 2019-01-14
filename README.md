@@ -1,5 +1,12 @@
 # API Console
 
-Administrative console for the API Server for maintenance and settings.
-Functions:
-Checking Logs, Creating API keys, Server status, Permissions, Actions.
+## TODO:
+
+ * System monitoring (Shutdown, restart, status, start)
+ * API key management (URL)
+ * Log management
+ * Permission List
+ * Action list & details
+ * Fusion CRM access tables
+ * Notification System 
+ * 
