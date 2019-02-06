@@ -18,7 +18,6 @@ export class LogsComponent implements OnInit, OnDestroy {
   constructor(private socket: SocketService) {}
 
   ngOnInit() {
-    this.socket.getLiveLog();
     this.socket.getLogList();
     this._logSub = this.socket.log.subscribe(log => {this.log += '\n' + log});
     this._logListSub = this.socket.logList.subscribe(logList => {this.logList = logList});

@@ -1,3 +1,4 @@
+
 .system-btn-group {
   display: flex;
   flex-direction: row;
@@ -12,4 +13,20 @@
   align-items: flex-start;
   justify-content: space-between;
 
+}
+
+.icon {
+  font-size: 2em;
+}
+
+.green {
+  color: #c1d72e;
+}
+
+.orange {
+  color: #ffc423;
+}
+
+.red {
+  color: #a30046;
 }

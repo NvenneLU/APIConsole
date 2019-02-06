@@ -19,7 +19,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: 'Permissions',
-    icon: 'nb-compose',
+    icon: 'nb-grid-a-outline',
     link: '/pages/permissions',
   },
   {

@@ -9,6 +9,7 @@ import { ApiService } from '../../@core/data/api.service';
 })
 export class KeysComponent {
   settings = {
+    mode: 'external',
     add: {
       addButtonContent: '<i class="nb-plus"></i>',
       createButtonContent: '<i class="nb-checkmark"></i>',

@@ -10,10 +10,8 @@ export class SocketService  {
   log = this.socket.fromEvent<string>('log');
   logList = this.socket.fromEvent<string[]>('logList');
   selectLog = this.socket.fromEvent<string>('selectedLog');
+  status = this.socket.fromEvent<string>('status');
 
-  getLiveLog() {
-    this.socket.emit('getLiveLog');
-  }
 
   getLogList() {
     this.socket.emit('getLogList');
@@ -21,5 +19,15 @@ export class SocketService  {
 
   getLog(log: string) {
     this.socket.emit('selectLog', log);
+  }
+
+  startServer() {
+    this.socket.emit('start');
+  }
+  restartServer() {
+    this.socket.emit('restart');
+  }
+  stopServer() {
+    this.socket.emit('stop');
   }
 }
